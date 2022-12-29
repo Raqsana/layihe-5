@@ -3,7 +3,7 @@ import "./CoinList.css";
 import { useState } from 'react';
 import { Link, useParams } from "react-router-dom";
 import DataMain from "../../Data/dataMain.json"
-import Header from "../../Components/Container/Container"
+import Container from "../../Components/Container/Container"
 
 
 function CoinList() {
@@ -33,7 +33,7 @@ function CoinList() {
                     <Link to="../">
                         <p className="text-dark">Homepage — List of the coins</p>
                     </Link>
-                    <Header f={newFunction} t={selectValueFunction} />
+                    <Container f={newFunction} t={selectValueFunction} />
                 </header>
             </div>
 
